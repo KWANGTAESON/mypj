@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_72d81664d0a75a7c63b2ab1179c4eb10 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_72d81664d0a75a7c63b2ab1179c4eb10" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_72d81664d0a75a7c63b2ab1179c4eb10 = L.map(
+                "map_72d81664d0a75a7c63b2ab1179c4eb10",
+                {
+                    center: [36.5, 127.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_05eaf87db9986ea6032d41bc0cad2476 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_05eaf87db9986ea6032d41bc0cad2476.addTo(map_72d81664d0a75a7c63b2ab1179c4eb10);
+        
+    
+            var circle_marker_e91f0aa9660550c951feeb956e410804 = L.circleMarker(
+                [35.1796, 129.0756],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.361818181818183, "stroke": true, "weight": 3}
+            ).addTo(map_72d81664d0a75a7c63b2ab1179c4eb10);
+        
+    
+        var popup_da3535884c070bb8f087fb9d24694dd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e97fbbf98f58483d71f1841c971bac37 = $(`<div id="html_e97fbbf98f58483d71f1841c971bac37" style="width: 100.0%; height: 100.0%;">Busan 12,299건</div>`)[0];
+                popup_da3535884c070bb8f087fb9d24694dd2.setContent(html_e97fbbf98f58483d71f1841c971bac37);
+            
+        
+
+        circle_marker_e91f0aa9660550c951feeb956e410804.bindPopup(popup_da3535884c070bb8f087fb9d24694dd2)
+        ;
+
+        
+    
+    
+            var circle_marker_d8890a420eda52614b7e5aa0104727be = L.circleMarker(
+                [35.8714, 128.6014],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.665454545454544, "stroke": true, "weight": 3}
+            ).addTo(map_72d81664d0a75a7c63b2ab1179c4eb10);
+        
+    
+        var popup_1b8810807f5518234dc680797c385890 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd12dcaa5c742ea31536462ac82732a3 = $(`<div id="html_bd12dcaa5c742ea31536462ac82732a3" style="width: 100.0%; height: 100.0%;">Daegu 14,666건</div>`)[0];
+                popup_1b8810807f5518234dc680797c385890.setContent(html_bd12dcaa5c742ea31536462ac82732a3);
+            
+        
+
+        circle_marker_d8890a420eda52614b7e5aa0104727be.bindPopup(popup_1b8810807f5518234dc680797c385890)
+        ;
+
+        
+    
+    
+            var circle_marker_519a2d51bd8b139cba4abcca18cb824a = L.circleMarker(
+                [37.5665, 126.978],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.37272727272727, "stroke": true, "weight": 3}
+            ).addTo(map_72d81664d0a75a7c63b2ab1179c4eb10);
+        
+    
+        var popup_058e3c412eab850b2dab635f57593595 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57e9af65ac96c95e195bac589a2b74af = $(`<div id="html_57e9af65ac96c95e195bac589a2b74af" style="width: 100.0%; height: 100.0%;">Seoul 16,155건</div>`)[0];
+                popup_058e3c412eab850b2dab635f57593595.setContent(html_57e9af65ac96c95e195bac589a2b74af);
+            
+        
+
+        circle_marker_519a2d51bd8b139cba4abcca18cb824a.bindPopup(popup_058e3c412eab850b2dab635f57593595)
+        ;
+
+        
+    
+    
+            var circle_marker_b4656af4d2aac41ecd591d33ceebb683 = L.circleMarker(
+                [37.5556, 128.725],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.70909090909091, "stroke": true, "weight": 3}
+            ).addTo(map_72d81664d0a75a7c63b2ab1179c4eb10);
+        
+    
+        var popup_1e32bd05f83f3efdc547d9ad2c977518 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4258a5d256e9464366eff4beccde578 = $(`<div id="html_d4258a5d256e9464366eff4beccde578" style="width: 100.0%; height: 100.0%;">Gangwon 11,940건</div>`)[0];
+                popup_1e32bd05f83f3efdc547d9ad2c977518.setContent(html_d4258a5d256e9464366eff4beccde578);
+            
+        
+
+        circle_marker_b4656af4d2aac41ecd591d33ceebb683.bindPopup(popup_1e32bd05f83f3efdc547d9ad2c977518)
+        ;
+
+        
+    
+    
+            var circle_marker_23de2339f9bd5cc3a88ff1a4c6d92ddf = L.circleMarker(
+                [36.6347, 127.5039],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.68545454545455, "stroke": true, "weight": 3}
+            ).addTo(map_72d81664d0a75a7c63b2ab1179c4eb10);
+        
+    
+        var popup_aa8fa07870d947e590623fda55d0e0f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bf3ae10b00e7b8e26d2aeb86eba92c4 = $(`<div id="html_1bf3ae10b00e7b8e26d2aeb86eba92c4" style="width: 100.0%; height: 100.0%;">Chungcheong 17,977건</div>`)[0];
+                popup_aa8fa07870d947e590623fda55d0e0f7.setContent(html_1bf3ae10b00e7b8e26d2aeb86eba92c4);
+            
+        
+
+        circle_marker_23de2339f9bd5cc3a88ff1a4c6d92ddf.bindPopup(popup_aa8fa07870d947e590623fda55d0e0f7)
+        ;
+
+        
+    
+    
+            var circle_marker_486121dafeb600822dbc4b54bf0d09ed = L.circleMarker(
+                [33.4996, 126.5312],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.943636363636364, "stroke": true, "weight": 3}
+            ).addTo(map_72d81664d0a75a7c63b2ab1179c4eb10);
+        
+    
+        var popup_68421e5cebdcef02febed0a49deff23b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed008b0a4db47cc65efa0e89ac2ce931 = $(`<div id="html_ed008b0a4db47cc65efa0e89ac2ce931" style="width: 100.0%; height: 100.0%;">Jeju 1,619건</div>`)[0];
+                popup_68421e5cebdcef02febed0a49deff23b.setContent(html_ed008b0a4db47cc65efa0e89ac2ce931);
+            
+        
+
+        circle_marker_486121dafeb600822dbc4b54bf0d09ed.bindPopup(popup_68421e5cebdcef02febed0a49deff23b)
+        ;
+
+        
+    
+    
+            var circle_marker_341f89e631a0c67a5d040ac078f7cd3a = L.circleMarker(
+                [35.5658, 126.8902],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 52.52363636363636, "stroke": true, "weight": 3}
+            ).addTo(map_72d81664d0a75a7c63b2ab1179c4eb10);
+        
+    
+        var popup_9bec18fdb74c6319daafb293c4a3096a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c84141af4434cb3c2e0d263cce1b49f = $(`<div id="html_6c84141af4434cb3c2e0d263cce1b49f" style="width: 100.0%; height: 100.0%;">Jeolla 28,888건</div>`)[0];
+                popup_9bec18fdb74c6319daafb293c4a3096a.setContent(html_6c84141af4434cb3c2e0d263cce1b49f);
+            
+        
+
+        circle_marker_341f89e631a0c67a5d040ac078f7cd3a.bindPopup(popup_9bec18fdb74c6319daafb293c4a3096a)
+        ;
+
+        
+    
+</script>
+</html>
