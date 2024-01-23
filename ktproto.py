@@ -19,7 +19,7 @@ font_path = "./malgun.ttf"  # 사용하려는 한글 폰트의 실제 경로로 
 # 한글 폰트 등록
 fontprop = fm.FontProperties(fname=font_path, size=12)
 plt.rcParams['font.family'] = fontprop.get_name()
-st.set_option('deprecation.showPyplotGlobalUse', False)
+
 
 # 지도 가상데이터
 map_data = {
