@@ -65,7 +65,9 @@ def highlight_level(s):
     return styles
 
 df = pd.read_csv('고장이력데이터_final.csv')
-
+all_all = pd.read_csv('전국장애현황수.csv')
+all_eq = pd.read_csv('장비.csv')
+all_warn = pd.read_csv('경보발생횟수.csv')
 
 
 
@@ -179,9 +181,7 @@ with tab2:
     today = date.today()
     show_map = st.button('전국 경보현황')
     
-    all_all = pd.read_csv('전국장애현황수.csv')
-    all_eq = pd.read_csv('./장비.csv')
-    all_warn = pd.read_csv('경보발생횟수.csv')
+  
     
     if show_map:
          print_map(df2)
