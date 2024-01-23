@@ -210,7 +210,7 @@ with tab2:
             fig = plt.figure(figsize=(8,8))
             # 선택한 지역을 빨간색으로 표시
             color_palette = ['red' if region == selected_region else 'gray' for region in all_all['지역']]
-            sns.barplot(data = all_all, y='지역', x='count', palette=color_palette)
+            sns.barplot(data = all_all, y='지역', x='count', palette=color_palette, fontproperties=fontprop)
             plt.title('지역별 경보 발생 현황', fontproperties=fontprop)
             plt.show()
 
