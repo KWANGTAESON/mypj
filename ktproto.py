@@ -206,10 +206,7 @@ with tab2:
     c1, c2, c3 = st.columns([1,1,1])
     with c1:
         def show_plot1(selected_region):
-            fontprop = './malgun.ttf' 
-            fontprop = fm.FontProperties(fname=font_path, size=12)
-            # Matplotlib에서 한글 폰트 설정
-            plt.rc('font', family=fontprop.get_name())
+            
             fig = plt.figure(figsize=(8,8))
             # 선택한 지역을 빨간색으로 표시
             color_palette = ['red' if region == selected_region else 'gray' for region in all_all['지역']]
