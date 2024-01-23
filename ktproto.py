@@ -12,7 +12,12 @@ from io import BytesIO, StringIO
 import base64
 
 # 시각화 한글폰트 설정
-plt.rcParams['font.family'] = 'Apple SD Gothic Neo'
+# plt.rcParams['font.family'] = 'Apple SD Gothic Neo'
+# 한글 폰트 경로 설정
+font_path = "./malgun.ttf"  # 사용하려는 한글 폰트의 실제 경로로 변경해야 합니다.
+# 한글 폰트 등록
+fontprop = fm.FontProperties(fname=font_path, size=12)
+
 
 # 지도 가상데이터
 map_data = {
@@ -206,7 +211,7 @@ with tab2:
             color_palette = ['red' if region == selected_region else 'gray' for region in all_all['지역']]
             sns.barplot(data = all_all, y='지역', x='count', palette=color_palette)
             plt.title('지역별 경보 발생 현황')
-            plt.show()
+            plt.show().suptitle("한글 텍스트", fontproperties=fontprop))
 
             st.pyplot(fig)
         # Streamlit 앱
