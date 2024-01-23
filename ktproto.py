@@ -215,6 +215,7 @@ with tab2:
             plt.title('지역별 경보 발생 현황', fontproperties=fontprop)
             plt.ylabel('지역별', fontproperties=fontprop)
             plt.xlabel('경보수', fontproperties=fontprop)
+            plt.yticks(fontproperties=fontprop)
             plt.show()
 
             st.pyplot(fig)
