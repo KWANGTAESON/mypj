@@ -13,7 +13,8 @@ import base64
 import matplotlib.font_manager as fm
 
 # 시각화 한글폰트 설정
-# plt.rcParams['font.family'] = 'Apple SD Gothic Neo'
+plt.rcParams['font.family'] = 'Apple SD Gothic Neo'
+
 # # 시각화 한글폰트 설정
 # plt.rc('font', family='Malgun Gothic')
 # sns.set(font="Malgun Gothic",#"NanumGothicCoding", 
@@ -88,25 +89,6 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown(
-    """
-    <style>
-@font-face {
-font-family: 'GmarketSansMedium';
-src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-font-weight: normal;
-font-style: normal;
-}
-
-html, body, [class*="css"]  {
-font-family: 'GmarketSansMedium';
-font-size: 12;
-}
-</style>
-
-""",
-    unsafe_allow_html=True,
-)
 
 # tabs 만들기 
 tab1, tab2 = st.tabs(["경보 확인", "경보 현황"])
@@ -217,10 +199,6 @@ with tab2:
     c1, c2, c3 = st.columns([1,1,1])
     with c1:
         def show_plot1(selected_region):
-            # 폰트 로드
-            font_path = 'GmarketSansMedium.otf'  # 폰트 파일의 경로로 변경
-            font_prop = fm.FontProperties(fname=font_path)
-            plt.rcParams['font.family'] = font_prop.get_name()
         
             fig = plt.figure(figsize=(8,8))
             # 선택한 지역을 빨간색으로 표시
@@ -237,10 +215,6 @@ with tab2:
     with c2:
 
         def show_plot2(selected_eq):
-            # 폰트 로드
-            font_path = 'GmarketSansMedium.otf'  # 폰트 파일의 경로로 변경
-            font_prop = fm.FontProperties(fname=font_path)
-            plt.rcParams['font.family'] = font_prop.get_name()
             # st.selectbox('지역', all_all['지역'])
             fig = plt.figure(figsize=(5,4.17))
             # fig, ax = plt.subplots(figsize=(10, 6))
@@ -275,9 +249,6 @@ with tab2:
     with c3:
         def show_plot3(selected_warn):
             # 폰트 로드
-            font_path = 'GmarketSansMedium.otf'  # 폰트 파일의 경로로 변경
-            font_prop = fm.FontProperties(fname=font_path)
-            plt.rcParams['font.family'] = font_prop.get_name()
             fig = plt.figure(figsize=(8,8))
             # 선택한 지역을 빨간색으로 표시
             color_palette1 = ['red' if region == selected_warn else 'gray' for region in all_warn['경보항목']]
