@@ -180,7 +180,7 @@ with tab2:
     show_map = st.button('전국 경보현황')
     
     all_all = pd.read_csv('전국장애현황수.csv')
-    all_eq = pd.read_csv('장비.csv')
+    all_eq = pd.read_csv('./장비.csv')
     all_warn = pd.read_csv('경보발생횟수.csv')
     
     if show_map:
