@@ -211,8 +211,8 @@ with tab2:
             # 선택한 지역을 빨간색으로 표시
             color_palette = ['red' if region == selected_region else 'gray' for region in all_all['지역']]
             sns.barplot(data = all_all, y='지역', x='count', palette=color_palette)
-            plt.title('지역별 경보 발생 현황')
-            plt.show().suptitle("한글 텍스트", fontproperties=fontprop)
+            plt.title('지역별 경보 발생 현황', fontproperties=fontprop)
+            plt.show()
 
             st.pyplot(fig)
         # Streamlit 앱
