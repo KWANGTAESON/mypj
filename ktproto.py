@@ -210,7 +210,7 @@ with tab2:
             fig = plt.figure(figsize=(8,8))
             # 선택한 지역을 빨간색으로 표시
             color_palette = ['red' if region == selected_region else 'gray' for region in all_all['지역']]
-            sns.barplot(data = all_all, y='지역', x='count', palette=color_palette, fontproperties=fontprop)
+            sns.barplot(data = all_all, y='지역', x='count', palette=color_palette)
             plt.title('지역별 경보 발생 현황', fontproperties=fontprop)
             plt.show()
 
@@ -234,7 +234,7 @@ with tab2:
             
 
             # 선택한 지역을 빨간색으로 표시
-            plt.pie(all_eq['발생횟수'], labels=all_eq['장비명'], autopct='%1.1f%%', startangle=90, colors=colors, fontproperties=fontprop)
+            plt.pie(all_eq['발생횟수'], labels=all_eq['장비명'], autopct='%1.1f%%', startangle=90, colors=colors)
             
             plt.title('장비별 경보 비율', fontproperties=fontprop)
             plt.show()
@@ -258,7 +258,7 @@ with tab2:
             fig = plt.figure(figsize=(8,8))
             # 선택한 지역을 빨간색으로 표시
             color_palette1 = ['red' if region == selected_warn else 'gray' for region in all_warn['경보항목']]
-            sns.barplot(data = all_warn, y='발생횟수(합)', x='경보항목', palette=color_palette1, fontproperties=fontprop)
+            sns.barplot(data = all_warn, y='발생횟수(합)', x='경보항목', palette=color_palette1)
             # plt.xticks(rotation=45)
             plt.title('경보횟수 Top5', fontproperties=fontprop)
             plt.show()
