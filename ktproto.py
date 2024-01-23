@@ -66,8 +66,8 @@ def highlight_level(s):
 
 df = pd.read_csv('고장이력데이터_final.csv')
 all_all = pd.read_csv('전국장애현황수.csv')
-all_eq = pd.read_csv('장비.csv')
-all_warn = pd.read_csv('경보발생횟수.csv')
+all_eq = pd.read_csv('eqlist.csv')
+all_warn = pd.read_csv('warncount.csv')
     
 
 
@@ -143,7 +143,7 @@ with tab1:
         
         if input_data:
             # CSV 파일에서 데이터 로드
-            warn_info = pd.read_csv('경보설명.csv')
+            warn_info = pd.read_csv('warnexplain.csv')
 
             # 검색어가 포함된 행만 선택
             filtered_data = warn_info[warn_info['경보항목'].str.contains(input_data, case=False)]
