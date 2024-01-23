@@ -12,12 +12,12 @@ from io import BytesIO, StringIO
 import base64
 
 # 시각화 한글폰트 설정
-# plt.rcParams['font.family'] = 'Apple SD Gothic Neo'
-# 시각화 한글폰트 설정
-plt.rc('font', family='Malgun Gothic')
-sns.set(font="Malgun Gothic",#"NanumGothicCoding", 
-rc={"axes.unicode_minus":False}, # 마이너스 부호 깨짐 현상 해결
-style='darkgrid')
+plt.rcParams['font.family'] = 'Apple SD Gothic Neo'
+# # 시각화 한글폰트 설정
+# plt.rc('font', family='Malgun Gothic')
+# sns.set(font="Malgun Gothic",#"NanumGothicCoding", 
+# rc={"axes.unicode_minus":False}, # 마이너스 부호 깨짐 현상 해결
+# style='darkgrid')
 
 # 지도 가상데이터
 map_data = {
@@ -87,25 +87,25 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown(
-    """
-    <style>
-@font-face {
-font-family: 'GmarketSansMedium';
-src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-font-weight: normal;
-font-style: normal;
-}
+# st.markdown(
+#     """
+#     <style>
+# @font-face {
+# font-family: 'GmarketSansMedium';
+# src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+# font-weight: normal;
+# font-style: normal;
+# }
 
-html, body, [class*="css"]  {
-font-family: 'GmarketSansMedium';
-font-size: 12;
-}
-</style>
+# html, body, [class*="css"]  {
+# font-family: 'GmarketSansMedium';
+# font-size: 12;
+# }
+# </style>
 
-""",
-    unsafe_allow_html=True,
-)
+# """,
+#     unsafe_allow_html=True,
+# )
 
 # tabs 만들기 
 tab1, tab2 = st.tabs(["경보 확인", "경보 현황"])
