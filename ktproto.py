@@ -236,7 +236,7 @@ with tab2:
             # 선택한 지역을 빨간색으로 표시
             plt.pie(all_eq['발생횟수'], labels=all_eq['장비명'], autopct='%1.1f%%', startangle=90, colors=colors)
             
-            plt.title('장비별 경보 비율', fontproperties=fontprop)
+            plt.title('장비별 경보 비율')
             plt.show()
            # BytesIO를 사용하여 그림을 바이트로 변환
             img_bytes = BytesIO()
@@ -260,7 +260,7 @@ with tab2:
             color_palette1 = ['red' if region == selected_warn else 'gray' for region in all_warn['경보항목']]
             sns.barplot(data = all_warn, y='발생횟수(합)', x='경보항목', palette=color_palette1)
             # plt.xticks(rotation=45)
-            plt.title('경보횟수 Top5', fontproperties=fontprop)
+            plt.title('경보횟수 Top5')
             plt.show()
 
             st.pyplot(fig)
