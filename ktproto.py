@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 from datetime import date
 from streamlit_folium import folium_static
 import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
 from io import BytesIO, StringIO
 import base64
 
