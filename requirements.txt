@@ -6,4 +6,3 @@ folium
 seaborn
 joblib
 base64
-
