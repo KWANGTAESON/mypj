@@ -263,6 +263,8 @@ with tab2:
             sns.barplot(data = all_warn, y='발생횟수(합)', x='경보항목', palette=color_palette1)
             # plt.xticks(rotation=45)
             plt.title('경보횟수 Top5', fontproperties=fontprop)
+            plt.ylabel('경보수', fontproperties=fontprop)
+            plt.xlabel('경보종류', fontproperties=fontprop)
             plt.show()
 
             st.pyplot(fig)
