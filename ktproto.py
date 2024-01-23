@@ -237,6 +237,10 @@ with tab2:
     with c2:
 
         def show_plot2(selected_eq):
+            # 폰트 로드
+            font_path = 'GmarketSansMedium.otf'  # 폰트 파일의 경로로 변경
+            font_prop = fm.FontProperties(fname=font_path)
+            plt.rcParams['font.family'] = font_prop.get_name()
             # st.selectbox('지역', all_all['지역'])
             fig = plt.figure(figsize=(5,4.17))
             # fig, ax = plt.subplots(figsize=(10, 6))
@@ -270,6 +274,10 @@ with tab2:
         
     with c3:
         def show_plot3(selected_warn):
+            # 폰트 로드
+            font_path = 'GmarketSansMedium.otf'  # 폰트 파일의 경로로 변경
+            font_prop = fm.FontProperties(fname=font_path)
+            plt.rcParams['font.family'] = font_prop.get_name()
             fig = plt.figure(figsize=(8,8))
             # 선택한 지역을 빨간색으로 표시
             color_palette1 = ['red' if region == selected_warn else 'gray' for region in all_warn['경보항목']]
