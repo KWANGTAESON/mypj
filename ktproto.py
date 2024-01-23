@@ -67,7 +67,7 @@ def highlight_level(s):
 df = pd.read_csv('고장이력데이터_final.csv')
 all_all = pd.read_csv('전국장애현황수.csv')
 all_eq = pd.read_csv('eqlist.csv')
-all_warn = pd.read_csv('경보발생횟수.csv')
+all_warn = pd.read_csv('warncount.csv')
 
 
 
