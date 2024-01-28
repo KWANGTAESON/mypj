@@ -187,7 +187,8 @@ with tab1:
             
             new_value_action = ""  # 'Action details' 입력 값 초기화
             new_value_cause = ""
-
+    st.info('생성형 AI 모델(딜리트)이 탑재될 곳')
+    st.image('AI_image.png')
 ### ------------------------------ tab2 내용 구성하기 ---------------------------------------------
 with tab2:
     
@@ -196,7 +197,7 @@ with tab2:
     st.markdown('### 📊 경보 현황')
     today = date.today()
     show_map = st.button('전국 경보현황')
-    
+    st.write('전국 경보현황을 확인하시려면 버튼을 클릭하세요.')
    
     if show_map:
          print_map(df2)
